@@ -4,7 +4,7 @@ import moment from 'moment'
 
 interface IProps {
 	post: IPost
-	handlePostDelete: (id: string | number) => void
+	handlePostDelete: (id: number) => void
 }
 
 const Post = ({ post, handlePostDelete }: IProps) => {
@@ -27,7 +27,7 @@ const Post = ({ post, handlePostDelete }: IProps) => {
 					<i
 						className='fa-solid fa-trash'
 						onClick={() => {
-							handlePostDelete(post.id ? post.id : '')
+							handlePostDelete(post.id)
 						}}
 						style={{
 							fontSize: '22px',

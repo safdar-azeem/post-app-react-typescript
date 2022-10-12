@@ -4,7 +4,7 @@ import { IPost } from '../types/post.type'
 
 interface Iprops {
 	posts: IPost[]
-	handlePostDelete: (id: string | number) => void
+	handlePostDelete: (id: number) => void
 }
 
 const PostList = ({ posts, handlePostDelete }: Iprops) => {

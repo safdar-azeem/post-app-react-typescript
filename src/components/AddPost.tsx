@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { IPost } from '../types/post.type'
 import { IForm } from '../types/form.type'
 
 interface Iprops {
-	handleSetPosts: (post: IPost) => void
+	handleSetPosts: (formData: IForm) => void
 }
 
 const AddPost = ({ handleSetPosts }: Iprops) => {
